@@ -5,10 +5,8 @@ import time
 
 from Selection_Sort import SelectionSort
 from Insertion_Sort import InsertionSort
-from Bubble_Sort import BubbleSort  
-from Merge_Sort import Merge
+from Bubble_Sort import BubbleSort
 from Merge_Sort import MergeSort
-from Quick_Sort import Partition 
 from Quick_Sort import QuickSort 
 
  
