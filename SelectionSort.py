@@ -1,4 +1,4 @@
-def SelectionSort(myList): #selection sort with two lists
+def SelectionSort(myList): #selection sort
   newList = [] #this is the list that function will return
   
   while len(myList) > 0:
