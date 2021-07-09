@@ -1,14 +1,15 @@
-def SelectionSort(myList): #selection sort
-  newList = [] #this is the list that function will return
+def SS_inPlace(myList):
   
-  while len(myList) > 0:
-    smallest = myList[0] #set smallest equal to the first number
+  for i in range(0, len(myList)):
+    min_index = i
+      
+    for j in range(i + 1, len(myList)):
+      if myList[j] < myList[min_index]:
+        min_index = j
+     
+    swap = myList[i]
     
-    for i in range(0, len(myList)): #check every value and replace smallest with the value if it is smaller than the current
-      if myList[i] < smallest:
-        smallest = myList[i]
-        
-    newList.append(smallest) #add smallest to the new list
-    myList.remove(smallest) #remove it from the original list
+    myList[i] = myList[min_index]
+    myList[min_index] = swap
     
-  return newList
+  return myList
