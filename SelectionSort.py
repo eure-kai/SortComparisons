@@ -1,4 +1,4 @@
-def SS_inPlace(myList):
+def SelectionSort(myList):
   
   for i in range(0, len(myList)):
     min_index = i
